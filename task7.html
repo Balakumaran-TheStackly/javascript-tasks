@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter your plan">
+    <button >add</button>
+    <ol></ol>
+
+
+    <script>
+        let input=document.querySelector("input");
+        let btn=document.querySelector("button")
+        let ol=document.querySelector("ol");
+
+        btn.addEventListener("click",()=>{
+            let inputVal=input.value
+            if (inputVal!=="") {
+                let li=document.createElement("li")
+                li.innerText=inputVal;
+                let del=document.createElement("button")
+                del.innerText="delete"
+                li.append(del);
+                ol.append(li);
+                del.addEventListener("click",()=>{
+                    li.remove();
+                })
+                
+                input.value=""  
+            } else {
+                alert("Enter a task")
+            }    
+        })
+    
+    </script>
+</body>
+</html>
