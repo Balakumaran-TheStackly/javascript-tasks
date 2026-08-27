@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>🛒 FAKE STORE</h1>
+    </header>
+    <Section class="view">
+        <section id="sch">
+            <button id="searchbtn">Search</button>
+            <input type="text" placeholder="Search product">
+            
+        </section>
+        
+        <section class="getbox" >
+        </section>
+        
+        <section class="sort">
+            <h4>Sort Product By Price :</h4>
+            <button id="low">Low → High</button>
+            <button id="high">High → Low</button>
+        </section>
+
+        <h3 id="productCount"></h3>
+    </SECtion>
+    
+
+   <SECtion class="api">
+        <div class="apiCard"></div>
+   </SECtion>
+
+   <button id="account">View Cart</button>
+    
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    header{
+        align-items: left;
+        justify-content: center;
+        padding: 20px;
+        display: flex;
+        
+    }
+    body{
+        height: auto;
+        padding: 20px;
+        background-color: rgb(117, 132, 132);
+        align-content: center;
+        justify-content: center;
+        display: block;
+    }
+    .view{
+        padding: 20px;
+        align-items: center;
+        font-size: 30px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;   
+
+    }
+    .view #sch{
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .view input{
+        height: 70px;
+        font-size: 30px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: rgb(240, 240, 240);
+        align-items: center;
+        padding: 30px;
+    }
+    .view button,#account{
+        height: 70px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: rgb(57, 75, 64);
+        border: 2px solid black;
+        font-size: 30px; 
+    }
+    .view .getbox {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 90px;
+        padding: 20px;
+    }
+    .view .sort{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 90px;
+        padding: 30px;
+    }
+    .view h3{
+        padding: 30px;
+        font-size: 50px;
+    }
+    .view .sort h4{
+        font-size: 45px;
+    }
+
+    body div{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+        padding: 20px;
+    }
+    body div>div{
+        background-color: rgb(53, 75, 68);
+        width: 300px;
+        height: auto;
+        padding: auto;
+        gap: 20px;
+        text-align: justify;
+        
+        border: 3px solid black;
+        border-radius: 15px;
+        
+    }
+    body div>div>h1{
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+
+    }
+    body div>div>h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    body div>div>img{
+        height: 200px;
+        width: 200px;
+    }
+    body div>div>p{
+        text-align: justify;
+        font-size: 15px;
+    }
+    body div>div>button{
+        height: 60px;
+        width: 90px;
+        border-radius: 10px;
+        background-color: rgb(39, 41, 39);
+        border: 2px solid black;
+        font-size: 20px; 
+    }
+    body div>div>button:hover{
+        background-color: rgb(189, 239, 193);
+        transform: translatey(5px);
+    }
+
+   </style>
+    
+    
+</body>
+<script src="api.js"></script>
+</html>
